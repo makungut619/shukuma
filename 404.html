@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="/favicon.ico" sizes="32x32" />
+  <title>404 - Page Not Found | Shukuma</title>
+  <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/eurostile-extended" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #FAF5EF;
+      color: #1A1A1A;
+      font-family: system-ui, -apple-system, sans-serif;
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* Subtle background pattern */
+    body::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle at 30% 40%, rgba(232, 168, 0, 0.06) 0%, transparent 50%),
+                  radial-gradient(circle at 70% 60%, rgba(232, 168, 0, 0.04) 0%, transparent 50%);
+      animation: float 20s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translate(0, 0); }
+      50% { transform: translate(-2%, -1%); }
+    }
+
+    .container {
+      text-align: center;
+      padding: 2rem;
+      position: relative;
+      z-index: 1;
+      max-width: 480px;
+    }
+
+    .error-code {
+      font-family: 'Eurostile Extended', sans-serif;
+      font-size: clamp(6rem, 20vw, 10rem);
+      font-weight: 900;
+      line-height: 1;
+      color: #E8A800;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.5rem;
+      text-shadow: 0 4px 30px rgba(232, 168, 0, 0.2);
+    }
+
+    .title {
+      font-family: 'Eurostile Extended', system-ui, sans-serif;
+      font-size: clamp(1.25rem, 3vw, 1.75rem);
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: #1A1A1A;
+    }
+
+    .description {
+      font-size: 1.1rem;
+      color: #6B6358;
+      line-height: 1.6;
+      margin-bottom: 2.5rem;
+    }
+
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: #1A1A1A;
+      color: #FAF5EF;
+      padding: 1rem 2rem;
+      border-radius: 9999px;
+      font-weight: 700;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: transform 0.2s ease, background-color 0.2s ease;
+    }
+
+    .cta:hover {
+      background: #2D2D2D;
+      transform: scale(1.05);
+    }
+
+    .cta svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    /* Card decoration */
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 0.75rem;
+      margin-bottom: 2rem;
+    }
+
+    .card {
+      width: 40px;
+      height: 56px;
+      background: white;
+      border-radius: 6px;
+      border: 2px solid #E8A800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      font-size: 0.75rem;
+      color: #E8A800;
+      transform: rotate(var(--rotation));
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+
+    .card:nth-child(1) { --rotation: -8deg; }
+    .card:nth-child(2) { --rotation: -3deg; }
+    .card:nth-child(3) { --rotation: 2deg; }
+    .card:nth-child(4) { --rotation: 7deg; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Decorative cards -->
+    <div class="cards">
+      <div class="card">?</div>
+      <div class="card">4</div>
+      <div class="card">0</div>
+      <div class="card">4</div>
+    </div>
+
+    <p class="error-code">404</p>
+    <h1 class="title">Page Not Found</h1>
+    <p class="description">
+      This page seems to have shuffled away. Let's get you back to the deck.
+    </p>
+    <a href="/" class="cta">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="m12 19-7-7 7-7"/>
+        <path d="M19 12H5"/>
+      </svg>
+      Back to Home
+    </a>
+  </div>
+</body>
+</html>
