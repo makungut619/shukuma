@@ -53,3 +53,12 @@ const videoObserver = new IntersectionObserver(
 );
 
 videos.forEach((video) => videoObserver.observe(video));
+
+// Feedback widget (preview only)
+if (import.meta.env.VITE_ENABLE_FEEDBACK === 'true') {
+  const s = document.createElement('script');
+  s.src = 'https://feedback-tool-theta.vercel.app/widget.js';
+  s.setAttribute('data-token', import.meta.env.VITE_FEEDBACK_TOKEN);
+  s.setAttribute('data-api', 'https://feedback-tool-theta.vercel.app');
+  document.body.appendChild(s);
+}
