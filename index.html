@@ -65,13 +65,13 @@
     <div class="max-w-4xl mx-auto text-center reveal">
       <h2 class="text-4xl md:text-5xl font-black mb-6">The Exercise Card Pack</h2>
       <p class="text-shukuma-muted text-lg md:text-xl leading-relaxed mb-8">
-        Think a regular deck of playing cards, except every single card is a different exercise. 
-        52 movements. 52 ways to move your body.
+        Think a regular deck of playing cards, but instead of suits you get exercise categories. 
+        4 categories. 13 cards each. The number tells you your reps.
       </p>
       <div class="grid md:grid-cols-3 gap-8 mt-12">
         <div class="bg-shukuma-cream p-6 rounded-2xl shadow-sm">
-          <p class="text-4xl font-black text-shukuma-gold mb-2">52</p>
-          <p class="text-shukuma-muted">Unique exercises</p>
+          <p class="text-4xl font-black text-shukuma-gold mb-2">4</p>
+          <p class="text-shukuma-muted">Exercise categories</p>
         </div>
         <div class="bg-shukuma-cream p-6 rounded-2xl shadow-sm">
           <p class="text-4xl font-black text-shukuma-gold mb-2">∞</p>
@@ -83,8 +83,8 @@
         </div>
       </div>
       <p class="text-shukuma-muted mt-10 text-base">
-        Each card features an illustrated exercise with the number on the card telling you your rep range. 
-        Includes tutorials and mindfulness prompts so you move with purpose, not just motion.
+        Each card features an illustrated exercise with the card number telling you your rep count. 
+        Flip it over for a mindfulness prompt. Includes tutorials so you move with purpose, not just motion.
       </p>
     </div>
   </section>
@@ -153,7 +153,53 @@
     </div>
   </section>
 
-  <!-- The Cards Section - Interactive Flip (7 cards) -->
+  <!-- Who Is It For -->
+  <section id="who" class="py-24 px-6 bg-shukuma-warm">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-4xl md:text-5xl font-black text-center mb-4 reveal">Who Is It For?</h2>
+      <p class="text-shukuma-muted text-center text-lg mb-16 reveal">If you have a body, it's for you. But especially if you're&hellip;</p>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-shukuma-cream p-6 rounded-2xl text-center reveal">
+          <div class="w-12 h-12 mx-auto mb-3 bg-shukuma-gold/10 rounded-full flex items-center justify-center">
+            <svg class="w-6 h-6 text-shukuma-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+            </svg>
+          </div>
+          <h3 class="font-bold mb-1">Busy Professional</h3>
+          <p class="text-shukuma-muted text-sm">No time for the gym? Pull a card between meetings.</p>
+        </div>
+        <div class="bg-shukuma-cream p-6 rounded-2xl text-center reveal">
+          <div class="w-12 h-12 mx-auto mb-3 bg-shukuma-gold/10 rounded-full flex items-center justify-center">
+            <svg class="w-6 h-6 text-shukuma-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </div>
+          <h3 class="font-bold mb-1">Frequent Traveller</h3>
+          <p class="text-shukuma-muted text-sm">Fits in your carry-on. Work out in any hotel room.</p>
+        </div>
+        <div class="bg-shukuma-cream p-6 rounded-2xl text-center reveal">
+          <div class="w-12 h-12 mx-auto mb-3 bg-shukuma-gold/10 rounded-full flex items-center justify-center">
+            <svg class="w-6 h-6 text-shukuma-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </div>
+          <h3 class="font-bold mb-1">Total Beginner</h3>
+          <p class="text-shukuma-muted text-sm">Never worked out before? Each card guides you step by step.</p>
+        </div>
+        <div class="bg-shukuma-cream p-6 rounded-2xl text-center reveal">
+          <div class="w-12 h-12 mx-auto mb-3 bg-shukuma-gold/10 rounded-full flex items-center justify-center">
+            <svg class="w-6 h-6 text-shukuma-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+            </svg>
+          </div>
+          <h3 class="font-bold mb-1">Anyone Who Hates Routine</h3>
+          <p class="text-shukuma-muted text-sm">Every shuffle is a fresh workout. Boredom? Gone.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Cards Section - Interactive Flip (8 cards) -->
   <section id="cards" class="py-24 px-6 bg-shukuma-warm">
     <div class="max-w-6xl mx-auto">
       <h2 class="text-4xl md:text-5xl font-black text-center mb-4 reveal">The Cards</h2>
@@ -236,6 +282,17 @@
             </div>
           </div>
         </div>
+        <!-- Card 8 -->
+        <div class="card-container aspect-[3/4] cursor-pointer reveal" onclick="this.classList.toggle('flipped')">
+          <div class="card-inner">
+            <div class="card-front rounded-2xl shadow-md overflow-hidden">
+              <img src="/images/card-8-back.jpg" alt="Shukuma card" class="w-full h-full object-cover" />
+            </div>
+            <div class="card-back rounded-2xl shadow-md overflow-hidden">
+              <img src="/images/card-8-front.jpg" alt="Exercise challenge" class="w-full h-full object-cover" />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -272,6 +329,13 @@
           <div>
             <p class="font-bold">Beginner-friendly &amp; modifiable</p>
             <p class="text-shukuma-muted text-sm">Every card includes tutorials. Go at your own pace</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-4 bg-shukuma-warm p-6 rounded-xl">
+          <span class="text-shukuma-gold text-2xl">✓</span>
+          <div>
+            <p class="font-bold">Fully customizable intensity</p>
+            <p class="text-shukuma-muted text-sm">Choose your own challenge level. Draw 5 cards for a quick hit or 20 for a full session</p>
           </div>
         </div>
       </div>
@@ -312,6 +376,77 @@
     </div>
   </section>
 
+  <!-- Testimonials -->
+  <section id="testimonials" class="py-24 px-6">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-4xl md:text-5xl font-black text-center mb-4 reveal">What People Are Saying</h2>
+      <p class="text-shukuma-muted text-center text-lg mb-16 reveal">Real people. Real movement. Real results.</p>
+      <div class="grid sm:grid-cols-2 gap-6">
+        <div class="bg-shukuma-warm p-8 rounded-2xl reveal">
+          <p class="text-shukuma-muted italic mb-4">"I love how simple and effective this is! I travel a lot for work, and this pack makes it so easy to stay fit wherever I go. Plus, the variety keeps me motivated!"</p>
+          <p class="font-bold text-sm">- Jessica R.</p>
+        </div>
+        <div class="bg-shukuma-warm p-8 rounded-2xl reveal">
+          <p class="text-shukuma-muted italic mb-4">"The Shukuma cards have been a game changer for me. I don't have to think about what exercises to do. I just grab a card and get moving!"</p>
+          <p class="font-bold text-sm">- Alex T.</p>
+        </div>
+        <div class="bg-shukuma-warm p-8 rounded-2xl reveal">
+          <p class="text-shukuma-muted italic mb-4">"As a beginner, I was looking for something straightforward, and these cards are perfect. The instructions are clear, and I can feel myself getting stronger every day."</p>
+          <p class="font-bold text-sm">- Emma L.</p>
+        </div>
+        <div class="bg-shukuma-warm p-8 rounded-2xl reveal">
+          <p class="text-shukuma-muted italic mb-4">"I've been using the Exercise Card Pack for a month now, and I'm hooked! It's fun, easy, and the variety keeps my workouts interesting."</p>
+          <p class="font-bold text-sm">- Chris D.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-24 px-6 bg-shukuma-warm">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-4xl md:text-5xl font-black text-center mb-4 reveal">Frequently Asked Questions</h2>
+      <p class="text-shukuma-muted text-center text-lg mb-16 reveal">Got questions? We've got answers.</p>
+      <div class="space-y-6 reveal">
+        <details class="bg-shukuma-cream rounded-2xl p-6 group">
+          <summary class="font-bold cursor-pointer list-none flex items-center justify-between">
+            What kind of exercises are on the cards?
+            <span class="text-shukuma-gold text-xl transition-transform group-open:rotate-45">+</span>
+          </summary>
+          <p class="text-shukuma-muted mt-4">Each card features a mix of exercises including stretches, bodyweight exercises, strength training, and cardio. No equipment is needed, and each exercise can be modified to your fitness level.</p>
+        </details>
+        <details class="bg-shukuma-cream rounded-2xl p-6 group">
+          <summary class="font-bold cursor-pointer list-none flex items-center justify-between">
+            Can I use these cards while traveling?
+            <span class="text-shukuma-gold text-xl transition-transform group-open:rotate-45">+</span>
+          </summary>
+          <p class="text-shukuma-muted mt-4">Yes! The Exercise Card Pack is compact and portable, making it the perfect fitness companion while traveling. Whether you're in a hotel room or at the park, you can easily follow along.</p>
+        </details>
+        <details class="bg-shukuma-cream rounded-2xl p-6 group">
+          <summary class="font-bold cursor-pointer list-none flex items-center justify-between">
+            Are the exercises suitable for beginners?
+            <span class="text-shukuma-gold text-xl transition-transform group-open:rotate-45">+</span>
+          </summary>
+          <p class="text-shukuma-muted mt-4">Absolutely! The exercises are designed for all levels. Each card includes easy-to-follow instructions, and you can adjust the intensity to your own comfort level.</p>
+        </details>
+        <details class="bg-shukuma-cream rounded-2xl p-6 group">
+          <summary class="font-bold cursor-pointer list-none flex items-center justify-between">
+            How many cards are in the pack?
+            <span class="text-shukuma-gold text-xl transition-transform group-open:rotate-45">+</span>
+          </summary>
+          <p class="text-shukuma-muted mt-4">The Shukuma Exercise Card Pack contains 52 cards across 4 categories: Core, Lower Body, Cardio, and Upper Body. The card number tells you how many reps to do, so every shuffle gives you a different workout.</p>
+        </details>
+        <details class="bg-shukuma-cream rounded-2xl p-6 group">
+          <summary class="font-bold cursor-pointer list-none flex items-center justify-between">
+            How do I get started?
+            <span class="text-shukuma-gold text-xl transition-transform group-open:rotate-45">+</span>
+          </summary>
+          <p class="text-shukuma-muted mt-4">Simply shuffle the cards, pick one, and follow the instructions. You can choose to do just one exercise or combine several cards for a longer workout session.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
   <!-- Final CTA -->
   <section id="get-yours" class="py-32 px-6">
     <div class="max-w-3xl mx-auto text-center reveal">
@@ -322,6 +457,19 @@
          class="cta-link inline-block bg-shukuma-dark text-shukuma-cream px-10 py-5 rounded-full font-black text-xl hover:scale-105 transition-transform pulse-cta">
         Get Your Deck →
       </a>
+    </div>
+  </section>
+
+  <!-- Our Story -->
+  <section id="our-story" class="py-24 px-6 bg-shukuma-warm">
+    <div class="max-w-3xl mx-auto text-center reveal">
+      <h2 class="text-4xl md:text-5xl font-black mb-6">Our Story</h2>
+      <p class="text-shukuma-muted text-lg leading-relaxed mb-6">
+        At Shukuma, we believe that fitness should be simple, fun, and accessible for everyone. We created the Exercise Card Pack to break away from the complexities of traditional workout routines and bring you a product that fits seamlessly into your daily life.
+      </p>
+      <p class="text-shukuma-muted text-lg leading-relaxed">
+        Whether you're at home, in the office, or on the go, we want to help you stay active without the hassle. Our mission is to make fitness enjoyable and achievable, regardless of your schedule or fitness level. We're passionate about helping you build a sustainable, positive relationship with movement, and we believe our Exercise Card Pack is the perfect way to start.
+      </p>
     </div>
   </section>
 
