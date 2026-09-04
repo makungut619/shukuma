@@ -3,10 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="/favicon.ico" sizes="32x32" />
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="icon" href="/favicon.ico" sizes="48x48" />
+  <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+  <link rel="manifest" href="/site.webmanifest" />
   <title>Shukuma - Where Fun Meets Fitness</title>
   <meta name="description" content="52 exercise cards. No gym. No equipment. No excuses. Shukuma fits in your pocket. The gym doesn't." />
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Shukuma - Where Fun Meets Fitness" />
+  <meta property="og:description" content="52 exercise cards. No gym. No equipment. No excuses." />
+  <meta property="og:image" content="/opengraph-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Shukuma - Where Fun Meets Fitness" />
+  <meta name="twitter:description" content="52 exercise cards. No gym. No equipment. No excuses." />
+  <meta name="twitter:image" content="/twitter-image.png" />
+  <!-- IZG Analytics stub: queues track() calls until the main script loads -->
+  <script>
+    window.izg = window.izg || { track: function () { (window._izg_q = window._izg_q || []).push(arguments); } };
+  </script>
   <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/eurostile-extended" />
   <link rel="stylesheet" href="/src/styles.css" />
 </head>
@@ -482,7 +500,7 @@
       </div>
       <div class="flex flex-col items-center gap-1">
         <p class="text-shukuma-muted text-sm">&copy; 2026 Shukuma. All rights reserved.</p>
-        <a href="https://www.izgsolutions.co.za/?utm_source=other&utm_medium=referral&utm_campaign=website_redirect_other_referral" target="_blank" rel="noopener" class="text-shukuma-muted text-xs hover:text-shukuma-gold transition-colors">Built by IZG Solutions</a>
+        <p class="text-shukuma-muted text-xs">Built by <a href="#" target="_blank" rel="noopener noreferrer" class="izg-credit-link hover:text-shukuma-gold transition-colors">IZG Solutions</a></p>
       </div>
       <div class="flex gap-4">
         <a href="https://www.instagram.com/shukuma__?igsh=MXMybWpiN2lnbzdkNw==" target="_blank" rel="noopener" class="text-shukuma-muted hover:text-shukuma-gold transition-colors" aria-label="Instagram">
